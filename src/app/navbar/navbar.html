@@ -1,0 +1,238 @@
+<!-- Top Header Bar (FULL WIDTH) -->
+<nav class="top-header-bar" aria-label="Government header">
+  <!-- LEFT: CM block + extra image -->
+  <div class="minister-info left">
+    <img class="logo-image" src="https://images.seeklogo.com/logo-png/40/1/the-karnataka-government-kannada-logo-png_seeklogo-407164.png">
+    <div class="text-info">
+      <img class="minister-photo" src="https://planning.karnataka.gov.in/frontend/opt1/images/cm_logo/chief_minister_of_karrnataka_icon.png?1755963018" alt="Shri. Siddaramaiah" />
+      <div class="minister-details">
+        <span>Shri. Siddaramaiah</span>
+        <span class="designation">Hon'ble Chief Minister</span>
+      </div>
+    </div>
+
+    <!-- EXTRA image next to Siddaramaiah (pedhaga) -->
+    <!-- <img
+      class="extra-photo"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Map_Karnataka.svg/240px-Map_Karnataka.svg.png"
+      alt="Karnataka Map"
+    /> -->
+  </div>
+
+  <!-- CENTER: RERA Title -->
+  <div class="rera-title-container">
+    <img class="dept-logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2N5i52Sy9W6Zk13qkrufOPjV-z5lLIFNwVg&s" alt="Karnataka Logo" />
+    <h2 class="rera-main-title">KARNATAKA REAL ESTATE REGULATORY AUTHORITY</h2>
+    <h3 class="rera-sub-title">Government of Karnataka</h3>
+  </div>
+
+  <!-- RIGHT: Housing Minister block + emblem -->
+  <div class="minister-info right">
+    <div class="text-info">
+      <img
+        class="minister-photo"
+        src="https://th.bing.com/th/id/OIP.CBuaPYBV5WEWtMzjXv48nwAAAA?w=127&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Shri. B.Z. Zameer Ahmed Khan"
+      />
+      <div class="minister-details">
+        <span>Shri. B.Z. Zameer</span>
+        <span>Ahmed Khan</span>
+        <span class="designation">Hon'ble Housing Minister</span>
+      </div>
+    </div>
+    <img class="logo-image" src="https://www.gkexams.com/images/forum/2023-02-20-karnataka-state-map1.jpg" alt="State Emblem" />
+  </div>
+</nav>
+
+<!-- MAIN NAVBAR -->
+<nav class="navbar" aria-label="Primary" style="background: #0084ff;">
+  <ul class="nav-links desktop-menu" role="menubar">
+    <li><a routerLink="/home" routerLinkActive="active" class="nav-link" role="menuitem">Home</a></li>
+
+    <li class="has-submenu" role="none">
+      <a class="nav-link" role="menuitem" aria-haspopup="true">About Us</a>
+      <ul class="submenu" role="menu">
+        <li><a routerLink="/about-rera" routerLinkActive="active" class="nav-link" role="menuitem">About RERA</a></li>
+        <li><a routerLink="/organisation-chart" routerLinkActive="active" class="nav-link" role="menuitem">Organisation Chart</a></li>
+        <li><a routerLink="/media-gallery" routerLinkActive="active" class="nav-link" role="menuitem">Media Gallery</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" role="none">
+      <a class="nav-link" aria-haspopup="true">Registration</a>
+      <ul class="submenu" role="menu">
+        <li><a routerLink="/project-registration" class="nav-link">Project Registration</a></li>
+        <li><a routerLink="/agent-registration" class="nav-link">Agent Registration</a></li>
+        <li><a routerLink="/complaint-registration" class="nav-link">Complaint Registration</a></li>
+        <li><a routerLink="/project-extension" class="nav-link">Apply for Project Extension</a></li>
+        <li><a routerLink="/project-change-request" class="nav-link">Apply For Project Change Request</a></li>
+        <li><a routerLink="/agent-change-request" class="nav-link">Apply for Agent Change Request</a></li>
+        <li><a routerLink="/post-registration-update" class="nav-link">Post Registration And Quarterly Update</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" role="none">
+      <a class="nav-link" aria-haspopup="true">Services</a>
+      <ul class="submenu" role="menu">
+        <li><a routerLink="/project-status" class="nav-link">Project Status</a></li>
+        <li><a routerLink="/agent-status" class="nav-link">Agent Status</a></li>
+        <li><a routerLink="/complaint-status" class="nav-link">Complaint Status</a></li>
+        <li><a routerLink="/orders" class="nav-link">Orders</a></li>
+        <li><a routerLink="/interim-orders" class="nav-link">Interim Orders</a></li>
+        <li><a routerLink="/authority-orders" class="nav-link">Orders of the Authority</a></li>
+        <li><a routerLink="/lok-adalat-orders" class="nav-link">Orders of Lok Adalat</a></li>
+        <li><a routerLink="/online-payment-status" class="nav-link">Online Payment Status</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" role="none">
+      <a class="nav-link" aria-haspopup="true">Complaint</a>
+      <ul class="submenu" role="menu">
+        <li><a routerLink="/cause-list-audjudicating-officer" class="nav-link">Daily Cause List (Audjudicating Officer)</a></li>
+        <li><a routerLink="/orders-audjudicating-officer" class="nav-link">Daily Orders (Audjudicating Officer)</a></li>
+        <li><a routerLink="/cause-list-authority" class="nav-link">Daily Cause List (Authority)</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" role="none">
+      <a class="nav-link" aria-haspopup="true">Help Desk/Unregistered Project</a>
+      <ul class="submenu" role="menu">
+        <li><a routerLink="/unregistered-investigation" class="nav-link">Unregistered Projects Under Investigation</a></li>
+        <li><a routerLink="/report-unregistered" class="nav-link">Report Unregistered Project</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" role="none">
+      <a class="nav-link" aria-haspopup="true">Notifications</a>
+      <ul class="submenu" role="menu">
+        <li><a routerLink="/circulars" class="nav-link">Circulars</a></li>
+        <li><a routerLink="/public-notifications" class="nav-link">Public Notifications</a></li>
+        <li><a routerLink="/tender-notifications" class="nav-link">Tender Notifications</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" role="none">
+      <a class="nav-link" aria-haspopup="true">Help</a>
+      <ul class="submenu" role="menu">
+        <li><a routerLink="/downloads" class="nav-link">Downloads</a></li>
+        <li><a routerLink="/rera-act-faqs" class="nav-link">Rera Act FAQ'S</a></li>
+        <li><a routerLink="/rera-rule-faqs" class="nav-link">Rera Rule FAQ'S</a></li>
+        <li><a routerLink="/faqs" class="nav-link">FAQ'S</a></li>
+      </ul>
+    </li>
+
+    <li class="has-submenu" role="none">
+      <a class="nav-link" aria-haspopup="true">Contact/Login</a>
+      <ul class="submenu" role="menu">
+        <li><a routerLink="/authority-login" class="nav-link">Authority Login</a></li>
+        <li><a routerLink="/temp-login" class="nav-link">TEMP Login</a></li>
+        <li><a routerLink="/public-login" class="nav-link">Public Login</a></li>
+        <li><a routerLink="/complaint-login" class="nav-link">Complaint Login</a></li>
+      </ul>
+    </li>
+
+    <li><a routerLink="/k-reat" class="nav-link">K-Reat</a></li>
+  </ul>
+
+  <!-- Hamburger -->
+  <button
+    class="mobile-menu-button"
+    (click)="toggleMobileMenu()"
+    aria-label="Toggle menu"
+    [attr.aria-expanded]="isMobileMenuOpen"
+  >
+    <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+  </button>
+</nav>
+
+<!-- MOBILE MENU (pushes page content down) -->
+<ul
+  class="nav-links mobile-menu"
+  [ngClass]="{ open: isMobileMenuOpen, 'open-all': openAllSubmenus }"
+>
+  <li><a routerLink="/home" class="nav-link" (click)="toggleMobileMenu()">Home</a></li>
+
+  <li class="has-submenu-mobile" (click)="toggleMobileSubmenu($event)">
+    <a class="nav-link">About Us</a>
+    <ul class="submenu-mobile" [ngClass]="{ open: activeSubmenu === 'About Us' || openAllSubmenus }">
+      <li><a routerLink="/about-rera" class="nav-link" (click)="toggleMobileMenu()">About RERA</a></li>
+      <li><a routerLink="/organisation-chart" class="nav-link" (click)="toggleMobileMenu()">Organisation Chart</a></li>
+      <li><a routerLink="/media-gallery" class="nav-link" (click)="toggleMobileMenu()">Media Gallery</a></li>
+    </ul>
+  </li>
+
+  <li class="has-submenu-mobile" (click)="toggleMobileSubmenu($event)">
+    <a class="nav-link">Registration</a>
+    <ul class="submenu-mobile" [ngClass]="{ open: activeSubmenu === 'Registration' || openAllSubmenus }">
+      <li><a routerLink="/project-registration" class="nav-link" (click)="toggleMobileMenu()">Project Registration</a></li>
+      <li><a routerLink="/agent-registration" class="nav-link" (click)="toggleMobileMenu()">Agent Registration</a></li>
+      <li><a routerLink="/complaint-registration" class="nav-link" (click)="toggleMobileMenu()">Complaint Registration</a></li>
+      <li><a routerLink="/project-extension" class="nav-link" (click)="toggleMobileMenu()">Apply for Project Extension</a></li>
+      <li><a routerLink="/project-change-request" class="nav-link" (click)="toggleMobileMenu()">Apply For Project Change Request</a></li>
+      <li><a routerLink="/agent-change-request" class="nav-link" (click)="toggleMobileMenu()">Apply for Agent Change Request</a></li>
+      <li><a routerLink="/post-registration-update" class="nav-link" (click)="toggleMobileMenu()">Post Registration And Quarterly Update</a></li>
+    </ul>
+  </li>
+
+  <li class="has-submenu-mobile" (click)="toggleMobileSubmenu($event)">
+    <a class="nav-link">Services</a>
+    <ul class="submenu-mobile" [ngClass]="{ open: activeSubmenu === 'Services' || openAllSubmenus }">
+      <li><a routerLink="/project-status" class="nav-link" (click)="toggleMobileMenu()">Project Status</a></li>
+      <li><a routerLink="/agent-status" class="nav-link" (click)="toggleMobileMenu()">Agent Status</a></li>
+      <li><a routerLink="/complaint-status" class="nav-link" (click)="toggleMobileMenu()">Complaint Status</a></li>
+      <li><a routerLink="/orders" class="nav-link" (click)="toggleMobileMenu()">Orders</a></li>
+      <li><a routerLink="/interim-orders" class="nav-link" (click)="toggleMobileMenu()">Interim Orders</a></li>
+      <li><a routerLink="/authority-orders" class="nav-link" (click)="toggleMobileMenu()">Orders of the Authority</a></li>
+      <li><a routerLink="/lok-adalat-orders" class="nav-link" (click)="toggleMobileMenu()">Orders of Lok Adalat</a></li>
+      <li><a routerLink="/online-payment-status" class="nav-link" (click)="toggleMobileMenu()">Online Payment Status</a></li>
+    </ul>
+  </li>
+
+  <li class="has-submenu-mobile" (click)="toggleMobileSubmenu($event)">
+    <a class="nav-link">Complaint</a>
+    <ul class="submenu-mobile" [ngClass]="{ open: activeSubmenu === 'Complaint' || openAllSubmenus }">
+      <li><a routerLink="/cause-list-audjudicating-officer" class="nav-link" (click)="toggleMobileMenu()">Daily Cause List (Audjudicating Officer)</a></li>
+      <li><a routerLink="/orders-audjudicating-officer" class="nav-link" (click)="toggleMobileMenu()">Daily Orders (Audjudicating Officer)</a></li>
+      <li><a routerLink="/cause-list-authority" class="nav-link" (click)="toggleMobileMenu()">Daily Cause List (Authority)</a></li>
+    </ul>
+  </li>
+
+  <li class="has-submenu-mobile" (click)="toggleMobileSubmenu($event)">
+    <a class="nav-link">Help Desk/Unregistered Project</a>
+    <ul class="submenu-mobile" [ngClass]="{ open: activeSubmenu === 'Help Desk/Unregistered Project' || openAllSubmenus }">
+      <li><a routerLink="/unregistered-investigation" class="nav-link" (click)="toggleMobileMenu()">Unregistered Projects Under Investigation</a></li>
+      <li><a routerLink="/report-unregistered" class="nav-link" (click)="toggleMobileMenu()">Report Unregistered Project</a></li>
+    </ul>
+  </li>
+
+  <li class="has-submenu-mobile" (click)="toggleMobileSubmenu($event)">
+    <a class="nav-link">Notifications</a>
+    <ul class="submenu-mobile" [ngClass]="{ open: activeSubmenu === 'Notifications' || openAllSubmenus }">
+      <li><a routerLink="/circulars" class="nav-link" (click)="toggleMobileMenu()">Circulars</a></li>
+      <li><a routerLink="/public-notifications" class="nav-link" (click)="toggleMobileMenu()">Public Notifications</a></li>
+      <li><a routerLink="/tender-notifications" class="nav-link" (click)="toggleMobileMenu()">Tender Notifications</a></li>
+    </ul>
+  </li>
+
+  <li class="has-submenu-mobile" (click)="toggleMobileSubmenu($event)">
+    <a class="nav-link">Help</a>
+    <ul class="submenu-mobile" [ngClass]="{ open: activeSubmenu === 'Help' || openAllSubmenus }">
+      <li><a routerLink="/downloads" class="nav-link" (click)="toggleMobileMenu()">Downloads</a></li>
+      <li><a routerLink="/rera-act-faqs" class="nav-link" (click)="toggleMobileMenu()">Rera Act FAQ'S</a></li>
+      <li><a routerLink="/rera-rule-faqs" class="nav-link" (click)="toggleMobileMenu()">Rera Rule FAQ'S</a></li>
+      <li><a routerLink="/faqs" class="nav-link" (click)="toggleMobileMenu()">FAQ'S</a></li>
+    </ul>
+  </li>
+
+  <li class="has-submenu-mobile" (click)="toggleMobileSubmenu($event)">
+    <a class="nav-link">Contact/Login</a>
+    <ul class="submenu-mobile" [ngClass]="{ open: activeSubmenu === 'Contact/Login' || openAllSubmenus }">
+      <li><a routerLink="/authority-login" class="nav-link" (click)="toggleMobileMenu()">Authority Login</a></li>
+      <li><a routerLink="/temp-login" class="nav-link" (click)="toggleMobileMenu()">TEMP Login</a></li>
+      <li><a routerLink="/public-login" class="nav-link" (click)="toggleMobileMenu()">Public Login</a></li>
+      <li><a routerLink="/complaint-login" class="nav-link" (click)="toggleMobileMenu()">Complaint Login</a></li>
+    </ul>
+  </li>
+
+  <li><a routerLink="/k-reat" class="nav-link" (click)="toggleMobileMenu()">K-Reat</a></li>
+</ul>

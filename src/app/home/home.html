@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karnataka Real Estate Regulatory Authority</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Your custom styles -->
+
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+     
+   
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <!-- <section class="hero-section">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-4">Karnataka Real Estate Regulatory Authority</h1>
+      <p class="lead mb-4">Ensuring transparency and accountability in real estate transactions</p>
+      <a href="#" class="btn btn-light btn-lg px-4" style="    background: cadetblue;">Register Your Project</a>
+    </div>
+  </section> -->
+
+
+<!-- Adding the Image past code. -->
+
+<section class="hero-wrapper">
+  <div class="container hero-grid">
+    
+    <!-- LEFT CONTENT -->
+    <div class="hero-text">
+      <h1>Karnataka Real Estate Regulatory Authority</h1>
+      <p>
+        The Real Estate Regulation and Development (RERA) Act, 2016 is one of the 
+        landmark legislations passed by the Government of India. Its objective is to 
+        reform the real estate sector, encouraging greater transparency, accountability 
+        and citizen centricity in Karnataka.
+      </p>
+      <a href="#" class="btn-register">Register Your Project</a>
+    </div>
+
+    <!-- RIGHT CAROUSEL -->
+    <div class="hero-carousel">
+      <div class="carousel" (mouseenter)="pause()" (mouseleave)="resume()">
+        <div class="slides" [style.transform]="'translateX(-' + (current * 100) + '%)'">
+          <figure class="slide" *ngFor="let slide of slides; let i = index">
+            <img class="carousel-image" [src]="slide.img" [alt]="slide.alt">
+            <div class="overlay">
+              <form class="overlay-form" [id]="'form-' + (i + 1)" (ngSubmit)="onSubmit('form-' + (i + 1))">
+                <h3>{{ slide.title }}</h3>
+                <textarea rows="3" placeholder="Message"></textarea>
+                <div class="form-actions">
+                  <button type="submit" class="btn-submit">{{ slide.submitLabel }}</button>
+                </div>
+              </form>
+            </div>
+          </figure>
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-btn prev" (click)="prevSlide()">‹</button>
+        <button class="carousel-btn next" (click)="nextSlide()">›</button>
+
+        <!-- Indicators -->
+        <div class="indicators">
+          <button *ngFor="let i of indicators" 
+                  class="indicator" 
+                  [class.active]="i === current"
+                  (click)="goToSlide(i)">
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+  <!-- About Section 1 -->
+  <section class="about-section container my-5">
+    <div class="row align-items-stretch">
+      <!-- Left Box Content -->
+      <div class="col-lg-8 col-md-12 mb-4">
+        <div class="about-box h-100 p-4 shadow-sm">
+          <h4>About Karnataka Real Estate Regulatory Authority</h4>
+          <p style="text-align: justify;">
+        The Real Estate Regulation and Development (RERA) Act, 2016 is considered
+        as one of the landmark legislations passed by the Government of India.
+        Its objective is to reform the real estate sector in India, encouraging
+        greater transparency, citizen centricity, accountability and financial
+        discipline. This is in line with the vast and growing economy of India
+        as in future many people will be investing in real estate sector.
+      </p>
+      <p style="text-align: justify;">
+        In Karnataka, RERA has played a pivotal role in ensuring that home buyers
+        are protected and developers remain accountable. Through strict compliance,
+        project registration, and timely updates, the Karnataka Real Estate
+        Regulatory Authority has contributed significantly to sustainable urban
+        development and consumer confidence in the real estate market.
+      </p>
+      <p style="text-align: justify;">
+        Real Estate Regulatory Authority (RERA) was established under the Real Estate (Regulation and Development) Act, 2016 to bring transparency, accountability, and efficiency to the real estate sector.
+Karnataka RERA (KRERA) was officially established on 24th July 2017 to regulate real estate projects and agents within the state.
+      </p>
+        </div>
+      </div>
+
+      <!-- Right Two Cards -->
+      <div class="col-lg-4 col-md-12">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card text-center h-100 p-4 shadow-sm">
+              <div class="card-img-container">
+                <i class="fas fa-building feature-icon"></i>
+              </div>
+              <h5 class="card-title fw-bold">PROJECT REGISTRATION</h5>
+              <p class="mb-2" >PROJECTS APPLIED FOR REGISTRATION</p>
+              <div class="stat-number">9443</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card text-center h-100 p-4 shadow-sm">
+              <div class="card-img-container">
+                <i class="fas fa-user-tie feature-icon"></i>
+              </div>
+              <h5 class="card-title fw-bold">AGENT REGISTRATION</h5>
+              <p class="mb-2">AGENTS APPLIED FOR REGISTRATION</p>
+              <div class="stat-number">6626</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section 2 -->
+  <section class="about-section container my-5">
+    <div class="row align-items-stretch">
+      <!-- Left Box Content -->
+      <div class="col-lg-8 col-md-12 mb-4">
+        <div class="about-box h-100 p-4 shadow-sm">
+          <h4>About RERA Act</h4>
+          <p style="text-align: justify;">
+        Welcome to the official portal of Real Estate Regulatory Authority Karnataka.
+        This application has been developed for the benefit of all the stakeholders of
+        the real estate industry more particularly the general public and consumers.
+        This website has been developed under Sec 4(3) of the Real Estate (Regulation
+        and Development) Act 2016.
+      </p>
+      <p style="text-align: justify;">
+        The Department of Housing, Government of Karnataka is the nodal department for
+        implementation of the Act in the State of Karnataka. The Act came into force
+        w.e.f 1st May 2017 and the Rules have been notified by the Government of
+        Karnataka on 10th July 2017.
+      </p>
+      <p style="text-align: justify;">
+        Since its implementation, Karnataka RERA has registered thousands of projects
+        and agents, resolved consumer disputes, and introduced digital platforms for
+        faster grievance redressal. It continues to focus on transparency, financial
+        discipline, and promoting trust between developers and buyers, thereby boosting
+        real estate growth in the state.
+      </p>
+          <button class="btn btn-primary px-4">Read More</button>
+        </div>
+      </div>
+
+      <!-- Right Two Cards -->
+      <div class="col-lg-4 col-md-12">
+        <div class="row g-4">
+          <div class="col-12">
+            <div class="card text-center h-100 p-4 shadow-sm">
+              <div class="card-img-container">
+                <i class="fas fa-file-alt feature-icon"></i>
+              </div>
+              <h5 class="card-title fw-bold">COMPLAINT REGISTRATION</h5>
+              <p class="mb-2">REGISTERED</p>
+              <div class="stat-number">12065</div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="card text-center h-100 p-4 shadow-sm">
+              <div class="card-img-container">
+                <i class="fas fa-calendar-plus feature-icon"></i>
+              </div>
+              <h5 class="card-title fw-bold">PROJECT EXTENSION</h5>
+              <p class="mb-2">APPROVED</p>
+              <div class="stat-number">872</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Features Section -->
+  <!-- <section class="container my-5 py-5">
+    <div class="text-center mb-5">
+      <h2 class="section-title d-inline-block">Our Services</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center p-4">
+          <i class="fas fa-clipboard-list feature-icon"></i>
+          <h4>Project Registration</h4>
+          <p>Register your real estate projects with Karnataka RERA for compliance with regulations.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center p-4">
+          <i class="fas fa-user-check feature-icon"></i>
+          <h4>Agent Registration</h4>
+          <p>Real estate agents can register themselves to operate legally in Karnataka.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center p-4">
+          <i class="fas fa-comments feature-icon"></i>
+          <h4>Complaint Portal</h4>
+          <p>Lodge complaints against builders or agents for any irregularities.</p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <div class="card text-center p-4">
+          <i class="fas fa-database feature-icon"></i>
+          <h4>Project Database</h4>
+          <p>Access information about all RERA registered projects in Karnataka.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+<!-- <h1>box's html code</h1> -->
+
+<!-- <section class="info-section">
+ 
+  <div class="box-container">
+    <h3 class="heading-style1">ALLOTTEE'S CORNER</h3>
+    <div class="box box-style1">
+      <ul>
+        <li><a href="#">1. Model Form of Allotment Letter</a></li>
+        <li><a href="#">2. Frequently Asked Questions</a></li>
+        <li><a href="#">3. The Real Estate (Regulation and Development) Act, 2016</a></li>
+        <li><a href="#">4. Guide to Property Registration</a></li>
+        <li><a href="#">5. Allottee Rights and Responsibilities</a></li>
+        <li><a href="#">6. Sample Agreement Templates</a></li>
+        <li><a href="#">7. Dispute Resolution Process</a></li>
+        <li><a href="#">8. Latest Updates on RERA Amendments</a></li>
+        <li><a href="#">9. How to File a Complaint</a></li>
+        <li><a href="#">10. Allottee Forum Discussions</a></li>
+        <li><a href="#">11. Tax Implications for Allottees</a></li>
+        <li><a href="#">12. Insurance Guidelines</a></li>
+        <li><a href="#">13. Maintenance Charges Explained</a></li>
+        <li><a href="#">14. Transfer of Ownership Process</a></li>
+        <li><a href="#">15. FAQ on Possession Delays</a></li>
+      </ul>
+      <button>Read More</button>
+    </div>
+  </div>
+
+  
+  <div class="box-container">
+    <h3 class="heading-style2">QUICK LINKS FOR PROMOTER</h3>
+    <div class="box box-style2">
+      <ul>
+        <li><a href="#">1. Karnataka Bank directions to open RERA designated account</a></li>
+        <li><a href="#">2. SBI and Canara Bank directions to open RERA designated account</a></li>
+        <li><a href="#">3. Model Form of Allotment Letter</a></li>
+        <li><a href="#">4. Project Registration Guidelines</a></li>
+        <li><a href="#">5. Compliance Checklist for Promoters</a></li>
+        <li><a href="#">6. Quarterly Update Forms</a></li>
+        <li><a href="#">7. Extension Application Process</a></li>
+        <li><a href="#">8. Penalty Calculation Tool</a></li>
+        <li><a href="#">9. Promoter Training Workshops</a></li>
+        <li><a href="#">10. Land Acquisition Rules</a></li>
+        <li><a href="#">11. Environmental Clearance Links</a></li>
+        <li><a href="#">12. Marketing Guidelines under RERA</a></li>
+        <li><a href="#">13. Bank Account Setup Tutorials</a></li>
+        <li><a href="#">14. Audit Report Submission Portal</a></li>
+        <li><a href="#">15. Promoter Association Contacts</a></li>
+      </ul>
+      <button>Read More</button>
+    </div>
+  </div>
+
+  
+  <div class="box-container">
+    <h3 class="heading-style3">LATEST NEWS</h3>
+    <div class="box box-style3">
+      <ul>
+        <li><a href="#">1. Applications invited for Legal Advisor <span class="new">NEW</span></a></li>
+        <li><a href="#">2. List of Promoters Pending for Recovery <span class="new">NEW</span></a></li>
+        <li><a href="#">3. New RERA Rules Effective from 2025</a></li>
+        <li><a href="#">4. Workshop on Real Estate Compliance</a></li>
+        <li><a href="#">5. Government Subsidy Announcements</a></li>
+        <li><a href="#">6. Case Studies on Successful Projects</a></li>
+        <li><a href="#">7. Updates on Housing Schemes</a></li>
+        <li><a href="#">8. Legal Advisor Hiring Details</a></li>
+        <li><a href="#">9. Recovery List Updates as of Aug 2025</a></li>
+        <li><a href="#">10. Industry Trends Report</a></li>
+        <li><a href="#">11. Webinar on RERA Digital Tools</a></li>
+        <li><a href="#">12. New Partnerships with Banks</a></li>
+        <li><a href="#">13. Policy Changes for Promoters</a></li>
+        <li><a href="#">14. Awards for Compliant Projects</a></li>
+        <li><a href="#">15. Market Analysis for 2025</a></li>
+      </ul>
+      <button>Read More</button>
+    </div>
+  </div>
+
+  
+  <div class="box-container">
+    <h3 class="heading-style4">CIRCULARS</h3>
+    <div class="box box-style4">
+      <ul>
+        <li><a href="#">1. Final Extension of Time for Submission of Annual Audit report</a></li>
+        <li><a href="#">2. Submission of Annual Audit report for FY ending 31st March 2023</a></li>
+        <li><a href="#">3. Guidelines for Digital Submissions</a></li>
+        <li><a href="#">4. Amendments to Circular No. 2024</a></li>
+        <li><a href="#">5. Extension for FY 2024 Reports</a></li>
+        <li><a href="#">6. Audit Format Changes</a></li>
+        <li><a href="#">7. Penalties for Late Submissions</a></li>
+        <li><a href="#">8. Training on Circular Compliance</a></li>
+        <li><a href="#">9. Circular on Project Delays</a></li>
+        <li><a href="#">10. Updates for FY 2025</a></li>
+        <li><a href="#">11. Bank Integration Circular</a></li>
+        <li><a href="#">12. Environmental Compliance</a></li>
+        <li><a href="#">13. Circular Archive Access</a></li>
+      </ul>
+      <button>Read More</button>
+    </div>
+  </div>
+
+ 
+  <div class="box-container">
+    <h3 class="heading-style5">NOTICE BOARD</h3>
+    <div class="box box-style5">
+      <ul>
+        <li><a href="#">1. Applications invited for Legal Advisor</a></li>
+        <li><a href="#">2. List of Promoters Pending for Recovery as on 31-08-2024</a></li>
+        <li><a href="#">3. Public Hearing on New Rules</a></li>
+        <li><a href="#">4. Notice for Annual General Meeting</a></li>
+        <li><a href="#">5. Recovery Actions Update</a></li>
+        <li><a href="#">6. Legal Advisor Qualifications</a></li>
+        <li><a href="#">7. Deadline Extensions Notice</a></li>
+        <li><a href="#">8. Project Inspection Schedules</a></li>
+        <li><a href="#">9. Stakeholder Feedback Form</a></li>
+        <li><a href="#">10. Notice on Fee Changes</a></li>
+        <li><a href="#">11. Compliance Workshop Dates</a></li>
+        <li><a href="#">12. Promoter Blacklist Warnings</a></li>
+        <li><a href="#">13. Public Notices Archive</a></li>
+        <li><a href="#">14. Emergency Contact Updates</a></li>
+      </ul>
+      <button>Read More</button>
+    </div>
+  </div>
+
+
+  <div class="box-container">
+    <h3 class="heading-style6">CAUSE LIST (23-08-2025)</h3>
+    <div class="box box-style6">
+      <ul>
+        <li><a href="#">1. Adjudicating Officer</a></li>
+        <li><a href="#">2. Authority (Complaints)</a></li>
+        <li><a href="#">3. Authority (Projects)</a></li>
+        <li><a href="#">4. Hearing Schedule for Case #123</a></li>
+        <li><a href="#">5. Complaint Resolution Timelines</a></li>
+        <li><a href="#">6. Project Approval Hearings</a></li>
+        <li><a href="#">7. Adjudicating Officer Contacts</a></li>
+        <li><a href="#">8. Cause List for September 2025</a></li>
+        <li><a href="#">9. Virtual Hearing Guidelines</a></li>
+        <li><a href="#">10. Case Status Checker</a></li>
+        <li><a href="#">11. Appeals Process</a></li>
+        <li><a href="#">12. Authority Meeting Minutes</a></li>
+        <li><a href="#">13. Pending Cases List</a></li>
+        <li><a href="#">14. Legal Aid Resources</a></li>
+        <li><a href="#">15. Cause List Archive</a></li>
+      </ul>
+      <button>Read More</button>
+    </div>
+  </div>
+</section> -->
+
+
+<section class="info-section">
+  <!-- Box 1 -->
+  <article class="card">
+    <header class="card-head">
+      <h3>ALLOTTEE'S CORNER</h3>
+    </header>
+    <div class="card-body" >
+      <ul class="link-list">
+        <li><a href="#">1. Model Form of Allotment Letter</a></li>
+        <li><a href="#">2. Frequently Asked Questions</a></li>
+        <li><a href="#">3. The Real Estate (Regulation and Development) Act, 2016</a></li>
+        <li><a href="#">4. The Karnataka Real Estate (Regulation and Development) Rules, 2017</a></li>
+        
+      </ul>
+    </div>
+    <footer class="card-foot">
+      <a class="btn-read" href="#">Read More »</a>
+    </footer>
+  </article>
+
+  <!-- Box 2 -->
+  <article class="card">
+    <header class="card-head">
+      <h3>QUICK LINKS FOR PROMOTER</h3>
+    </header>
+    <div class="card-body">
+      <ul class="link-list">
+        <li><a href="#">1. Karnataka Bank directions to open RERA designated account</a></li>
+        <li><a href="#">2. SBI and Canara Bank directions to open RERA designated account</a></li>
+        <li><a href="#">3. Model Form of Allotment Letter</a></li>
+             <li><a href="#">4. Regarding providing Basic Infrastructure facilities to the Labours and their Children at the construction site</a></li>
+      </ul>
+    </div>
+    <footer class="card-foot">
+      <a class="btn-read" href="#">Read More »</a>
+    </footer>
+  </article>
+
+  <!-- Box 3 -->
+  <article class="card">
+    <header class="card-head">
+      <h3>LATEST NEWS</h3>
+    </header>
+    <div class="card-body">
+      <ul class="link-list">
+        <li><a href="#">1. Applications invited for Legal Advisor <span class="badge-new">NEW</span></a></li>
+        <li><a href="#">2. List of Promoters Pending for Recovery <span class="badge-new">NEW</span></a></li>
+          <li><a href="#">3. Frequently Asked Questions<span class="badge-new">NEW</span></a></li>
+      </ul>
+    </div>
+    <footer class="card-foot">
+      <a class="btn-read" href="#">Read More »</a>
+    </footer>
+  </article>
+
+  <!-- Box 4 -->
+  <article class="card">
+    <header class="card-head">
+      <h3>CIRCULARS</h3>
+    </header>
+    <div class="card-body">
+      <ul class="link-list">
+        <li><a href="#">1. Final Extension of Time for Submission of Annual Audit report</a></li>
+        <li><a href="#">2. Submission of Annual Audit report for FY ending 31st March 2023</a></li>
+            <li><a href="#">3. Submission of Annual Audit report as per Section 4(2)(l)(D) of the RERA Act, 2016 for the financial year ending 31st March 2023</a></li>
+      </ul>
+    </div>
+    <footer class="card-foot">
+      <a class="btn-read" href="#">Read More »</a>
+    </footer>
+  </article>
+
+  <!-- Box 5 -->
+  <article class="card">
+    <header class="card-head">
+      <h3>NOTICE BOARD</h3>
+    </header>
+    <div class="card-body">
+      <ul class="link-list">
+        <li><a href="#">1. Applications invited for Legal Advisor</a></li>
+        <li><a href="#">2. List of Promoters Pending for Recovery as on 31-08-2024</a></li>
+     <li><a href="#">3.  List of Promoters Pending for Recovery as Arrears of Land Revenue who are not complied the Orders of K-RERA as on 31-08-2024</a></li>
+      </ul>
+    </div>
+    <footer class="card-foot">
+      <a class="btn-read" href="#">Read More »</a>
+    </footer>
+  </article>
+
+  <!-- Box 6 -->
+  <article class="card">
+    <header class="card-head">
+      <h3>CAUSE LIST (23-08-2025)</h3>
+    </header>
+    <div class="card-body">
+      <ul class="link-list">
+        <li><a href="#">1. Adjudicating Officer</a></li>
+        <li><a href="#">2. Authority (Complaints)</a></li>
+         <li><a href="#">3. Authority ( Projects )</a></li>
+      
+            <li><a href="#">4. Appellate Tribunal</a></li>
+      </ul>
+    </div>
+    <footer class="card-foot">
+      <a class="btn-read" href="#">Read More »</a>
+    </footer>
+  </article>
+</section>
+
+
+
+
+<!-- FOOTER -->
+<footer class="footer-section">
+  <!-- Reach Us -->
+  <div class="footer-column" >
+    <h3 class="footer-heading">Reach Us</h3>
+    <p>
+      Address : <br>
+      Karnataka Real Estate Regulatory Authority, 2nd floor,<br>
+      Silver Jubli Block, Unity Building, CSI Compound, 3rd Cross,<br>
+      Mission Road, Bengaluru, Karnataka - 560027
+    </p>
+    <p>
+      PHONE : <br>
+      📞 080-22249798, 22249799 <br>
+      📞 080-41624455, 41692244
+    </p>
+    <p>
+      EMAIL : ✉️ krera-chairman@karnataka.gov.in
+    </p>
+  </div>
+
+  <!-- Terms and Conditions -->
+  <div class="footer-column">
+    <h3 class="footer-heading">Terms and Conditions</h3>
+    <ul>
+      <li><a href="#">Terms and Conditions</a></li>
+      <li><a href="#">Hyperlink Policy</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Copyright Policy</a></li>
+    </ul>
+  </div>
+
+  <!-- Important Websites -->
+  <div class="footer-column">
+    <h3 class="footer-heading">Important Websites</h3>
+    <ul>
+      <li><a href="#">Government of India</a></li>
+      <li><a href="#">Government of Karnataka</a></li>
+      <li><a href="#">Karnataka Housing Department</a></li>
+      <li><a href="#">Karnataka Slum Development Board</a></li>
+      <li><a href="#">Rajiv Gandhi Housing Corporation Limited</a></li>
+      <li><a href="#">Khajane II</a></li>
+    </ul>
+  </div>
+
+  <!-- Visitors -->
+  <div class="footer-column">
+    <h3 class="footer-heading">Visitors</h3>
+    <p>Total Visitors : 36394614</p>
+    <p>Today's Count : 0033846</p>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
